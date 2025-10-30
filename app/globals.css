@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-jarvis-dark text-jarvis-blue;
+    font-family: 'Orbitron', 'Courier New', monospace;
+  }
+}
+
+@layer utilities {
+  .text-glow {
+    text-shadow: 0 0 10px rgba(0, 217, 255, 0.8),
+                 0 0 20px rgba(0, 217, 255, 0.6),
+                 0 0 30px rgba(0, 217, 255, 0.4);
+  }
+
+  .border-glow {
+    box-shadow: 0 0 10px rgba(0, 217, 255, 0.5),
+                inset 0 0 10px rgba(0, 217, 255, 0.2);
+  }
+
+  .grid-pattern {
+    background-image:
+      linear-gradient(rgba(0, 217, 255, 0.1) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(0, 217, 255, 0.1) 1px, transparent 1px);
+    background-size: 50px 50px;
+  }
+}
